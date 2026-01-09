@@ -25,4 +25,5 @@ app.get("/", (_, res) =>
   res.send({ ok: true, message: "Skanda Interiors API" })
 );
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, "0.0.0.0", () => console.log(`Server running on port ${PORT}`));
+
